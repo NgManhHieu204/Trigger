@@ -11,7 +11,10 @@
 5. Kết luận về Trigger đã giúp gì cho đồ án của em.
 
 
+## A. Trình bày lại đầu bài của đồ án PT&TKHT
+
 ### TÊN ĐỀ TÀI: PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG ĐIỂM DANH BẰNG NHẬN DIỆN KHUÔN MẶT
+
 Yêu cầu của đề tài: Thiết kế hệ thống điểm danh bằng nhận diện khuôn mặt
 
 DB của đồ án:
@@ -82,5 +85,38 @@ Các Check Constraint
 
 ![Screenshot 2025-04-23 170419](https://github.com/user-attachments/assets/e21e3356-a888-4f2e-90d8-9f06fc895bbc)
 
+Các khóa ngoại liên kết các bảng
 
+![Screenshot 2025-04-23 171130](https://github.com/user-attachments/assets/f479b77a-ad2a-4238-8051-ed16dbf872a2)
 
+![Screenshot 2025-04-23 170814](https://github.com/user-attachments/assets/75024e7d-69fd-4719-83bb-dd041250b817)
+
+![Screenshot 2025-04-23 170928](https://github.com/user-attachments/assets/10743425-4873-4679-a7aa-49f55062d15c)
+
+![Screenshot 2025-04-23 171023](https://github.com/user-attachments/assets/5ff83dca-ad3d-4a75-adef-8346c13f8317)
+
+## B. Nội dung Bài tập 05
+
+Thêm trường phi chuẩn là SoLanVang vào bảng SinhVien
+
+![Screenshot 2025-04-23 161158](https://github.com/user-attachments/assets/aa40ae87-8b4a-45d1-892d-46d937698102)
+
+Ban đầu sinh viên với mã 101 có số lần vắng là không
+
+![Screenshot 2025-04-23 222701](https://github.com/user-attachments/assets/c8135aea-dc0e-42a0-b444-1e622f5980e3)
+
+Viết trigger để tự động cập nhật số lần vắng mặt của sinh viên
+
+![Screenshot 2025-04-23 222810](https://github.com/user-attachments/assets/77d1f88b-78c9-44fe-a1ce-9e71300774cb)
+
+Sau khi thêm dư liệu vào trigger sẽ tự động update số lần vắng mặt của sinh viên và lưu kết quả vào bảng sinh viên
+
+![Screenshot 2025-04-23 224204](https://github.com/user-attachments/assets/b5bcf4b6-61a6-477b-a758-a47ea03dea05)
+
+Đây là kết quả sau khi đã update
+
+![Screenshot 2025-04-23 224214](https://github.com/user-attachments/assets/553f4534-8460-4cc1-9746-2340f7d963cf)
+
+==> Kết luận: Trigger giúp tự động tăng SoLanVang trong bảng SinhVien khi sinh viên được điểm danh với trạng thái Vắng
+
+điều nầy giúp không cần viết lệnh UPDATE thủ công.
